@@ -1,0 +1,7 @@
+---
+- name: create network for deploying containers
+  become: true
+  become_method: sudo
+  docker_network:
+    name: wow_network
+    state: present
